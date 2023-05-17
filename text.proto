@@ -1,0 +1,22 @@
+syntax = "proto3";
+
+service TextService {
+    rpc sendText1 (TextRequest1) returns (TextResponse1) {}
+    rpc sendText2 (TextRequest2) returns (TextResponse2) {}
+}
+
+message TextRequest1 {
+    string text = 1;
+}
+
+message TextResponse1 {
+    string text = 1;
+}
+
+message TextRequest2 {
+    string text = 1;
+}
+
+message TextResponse2 {
+    string text = 1;
+}
